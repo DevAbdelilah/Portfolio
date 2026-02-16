@@ -2,7 +2,7 @@
   "name": "portfolio-react-ts",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://DevAbdellah.github.io/portfolio-react-ts",
+  "homepage": "https://DevAbdelilah.github.io/Portfolio",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@types/node": "^16.18.68",
