@@ -45,20 +45,17 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="lg:w-1/2 flex justify-center">
-            <div className="relative">
-              <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-teal-400 shadow-2xl">
-                <img
-                  src="https://avatars.githubusercontent.com/DevAbdelilah"
-                  alt={personalInfo.name}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    // Fallback image if GitHub avatar fails
-                    e.currentTarget.src =
-                      "https://via.placeholder.com/320x320/00d4aa/ffffff?text=AC";
-                  }}
-                />
-              </div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full opacity-20 animate-pulse"></div>
+            <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-teal-400 shadow-lg">
+              <img
+                src="https://avatars.githubusercontent.com/DevAbdelilah"
+                alt={personalInfo.name}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback image if GitHub avatar fails
+                  e.currentTarget.src =
+                    "https://via.placeholder.com/320x320/14b8a6/ffffff?text=AC";
+                }}
+              />
             </div>
           </div>
         </div>
