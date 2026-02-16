@@ -1,7 +1,6 @@
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { setActiveSection } from "../../store/portfolioSlice";
-import "./Header.css";
 
 const Header: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -20,61 +19,36 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="header">
-      <nav className="nav">
-        <div className="nav-brand">
-          <h2>{personalInfo.name}</h2>
+    <header className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+      <nav className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          <div className="text-2xl font-bold text-teal-400">
+            <h2>{personalInfo.name}</h2>
+          </div>
+          <ul className="hidden md:flex space-x-8">
+            {[
+              "home",
+              "about",
+              "experience",
+              "skills",
+              "projects",
+              "contact",
+            ].map((section) => (
+              <li key={section}>
+                <button
+                  className={`capitalize transition-colors duration-300 hover:text-teal-400 ${
+                    activeSection === section
+                      ? "text-teal-400"
+                      : "text-gray-300"
+                  }`}
+                  onClick={() => handleNavClick(section)}
+                >
+                  {section}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul className="nav-menu">
-          <li>
-            <button
-              className={activeSection === "home" ? "active" : ""}
-              onClick={() => handleNavClick("home")}
-            >
-              Home
-            </button>
-          </li>
-          <li>
-            <button
-              className={activeSection === "about" ? "active" : ""}
-              onClick={() => handleNavClick("about")}
-            >
-              About
-            </button>
-          </li>
-          <li>
-            <button
-              className={activeSection === "experience" ? "active" : ""}
-              onClick={() => handleNavClick("experience")}
-            >
-              Experience
-            </button>
-          </li>
-          <li>
-            <button
-              className={activeSection === "skills" ? "active" : ""}
-              onClick={() => handleNavClick("skills")}
-            >
-              Skills
-            </button>
-          </li>
-          <li>
-            <button
-              className={activeSection === "projects" ? "active" : ""}
-              onClick={() => handleNavClick("projects")}
-            >
-              Projects
-            </button>
-          </li>
-          <li>
-            <button
-              className={activeSection === "contact" ? "active" : ""}
-              onClick={() => handleNavClick("contact")}
-            >
-              Contact
-            </button>
-          </li>
-        </ul>
       </nav>
     </header>
   );
