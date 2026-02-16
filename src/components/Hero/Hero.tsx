@@ -23,12 +23,17 @@ const Hero: React.FC = () => {
               {personalInfo.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
-                href="#contact"
+              <button
+                onClick={() => {
+                  const element = document.getElementById("contact");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
                 className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
               >
                 Get In Touch
-              </a>
+              </button>
               <a
                 href={personalInfo.github}
                 className="border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center gap-2"
@@ -43,7 +48,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-teal-400 shadow-2xl">
                 <img
-                  src="https://avatars.githubusercontent.com/u/DevAbdellah"
+                  src="https://avatars.githubusercontent.com/DevAbdelilah"
                   alt={personalInfo.name}
                   className="w-full h-full object-cover"
                   onError={(e) => {

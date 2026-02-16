@@ -9,7 +9,7 @@ const initialState: PortfolioState = {
     email: "charafiabdellah3@gmail.com",
     phone: "+212 6 03 70 68 44",
     location: "Kenitra, Morocco",
-    github: "https://github.com/DevAbdellah",
+    github: "https://github.com/DevAbdelilah",
     description:
       "Results-driven Frontend Developer with 5 years building scalable web applications using React.js, Next.js, and TypeScript. Expert in state management (Redux), API integration (GraphQL/REST), and testing (Jest, Playwright).",
   },
@@ -90,7 +90,7 @@ const initialState: PortfolioState = {
       description:
         "Built with React, TypeScript, and Redux. Features include product catalog, shopping cart, and payment integration.",
       technologies: ["React", "TypeScript", "Redux", "Node.js"],
-      githubUrl: "https://github.com/DevAbdellah",
+      githubUrl: "https://github.com/DevAbdelilah",
       liveUrl: "https://example.com",
     },
     {
@@ -99,7 +99,7 @@ const initialState: PortfolioState = {
       description:
         "A productivity app with drag-and-drop functionality, built using React and Redux Toolkit.",
       technologies: ["React", "Redux Toolkit", "TypeScript", "CSS3"],
-      githubUrl: "https://github.com/DevAbdellah",
+      githubUrl: "https://github.com/DevAbdelilah",
     },
     {
       id: 3,
@@ -107,7 +107,7 @@ const initialState: PortfolioState = {
       description:
         "Real-time weather app with location-based forecasts and interactive charts.",
       technologies: ["React", "TypeScript", "Chart.js", "Weather API"],
-      githubUrl: "https://github.com/DevAbdellah",
+      githubUrl: "https://github.com/DevAbdelilah",
     },
   ],
   isLoading: false,
