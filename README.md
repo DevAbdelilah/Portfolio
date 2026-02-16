@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React TypeScript Redux Portfolio
 
 A modern, beginner-friendly portfolio website built with React, TypeScript, and Redux Toolkit.
@@ -142,3 +143,7 @@ Each component has its own CSS file for easy customization:
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+=======
+# Portfolio
+Modern portfolio website built with React 18, TypeScript, and Redux Toolkit. Features responsive design, smooth animations, and showcases frontend development skills with clean, maintainable code architecture.
+>>>>>>> 0e1a12941a9ec3ff0fc25dba9290a3d7ef357208
